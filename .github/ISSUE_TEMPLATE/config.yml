@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: codeuiapp related issues
+    url: https://github.com/Wromo/codeuiapp/issues/new/choose
+    about: Report issues related to Codeuiapp(not Codeuiapp)
+  - name: Chat
+    url: https://support.wromo.com
+    about: Ask questions and discuss with other Codeuiapp users.

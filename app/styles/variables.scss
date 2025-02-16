@@ -1,0 +1,251 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --codeuiapp-elements-borderColor: theme('colors.alpha.gray.10');
+  --codeuiapp-elements-borderColorActive: theme('colors.accent.600');
+
+  --codeuiapp-elements-bg-depth-1: theme('colors.white');
+  --codeuiapp-elements-bg-depth-2: theme('colors.gray.50');
+  --codeuiapp-elements-bg-depth-3: theme('colors.gray.200');
+  --codeuiapp-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --codeuiapp-elements-textPrimary: theme('colors.gray.950');
+  --codeuiapp-elements-textSecondary: theme('colors.gray.600');
+  --codeuiapp-elements-textTertiary: theme('colors.gray.500');
+
+  --codeuiapp-elements-code-background: theme('colors.gray.100');
+  --codeuiapp-elements-code-text: theme('colors.gray.950');
+
+  --codeuiapp-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --codeuiapp-elements-button-primary-text: theme('colors.accent.500');
+
+  --codeuiapp-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --codeuiapp-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --codeuiapp-elements-button-secondary-text: theme('colors.gray.950');
+
+  --codeuiapp-elements-button-danger-background: theme('colors.alpha.red.10');
+  --codeuiapp-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --codeuiapp-elements-button-danger-text: theme('colors.red.500');
+
+  --codeuiapp-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --codeuiapp-elements-item-contentActive: theme('colors.gray.950');
+  --codeuiapp-elements-item-contentAccent: theme('colors.accent.700');
+  --codeuiapp-elements-item-contentDanger: theme('colors.red.500');
+  --codeuiapp-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --codeuiapp-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --codeuiapp-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --codeuiapp-elements-loader-background: theme('colors.alpha.gray.10');
+  --codeuiapp-elements-loader-progress: theme('colors.accent.500');
+
+  --codeuiapp-elements-artifacts-background: theme('colors.white');
+  --codeuiapp-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --codeuiapp-elements-artifacts-borderColor: var(--codeuiapp-elements-borderColor);
+  --codeuiapp-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --codeuiapp-elements-artifacts-inlineCode-text: var(--codeuiapp-elements-textPrimary);
+
+  --codeuiapp-elements-actions-background: theme('colors.white');
+  --codeuiapp-elements-actions-code-background: theme('colors.gray.800');
+
+  --codeuiapp-elements-messages-background: theme('colors.gray.100');
+  --codeuiapp-elements-messages-linkColor: theme('colors.accent.500');
+  --codeuiapp-elements-messages-code-background: theme('colors.gray.800');
+  --codeuiapp-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --codeuiapp-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --codeuiapp-elements-icon-success: theme('colors.green.500');
+  --codeuiapp-elements-icon-error: theme('colors.red.500');
+  --codeuiapp-elements-icon-primary: theme('colors.gray.950');
+  --codeuiapp-elements-icon-secondary: theme('colors.gray.600');
+  --codeuiapp-elements-icon-tertiary: theme('colors.gray.500');
+
+  --codeuiapp-elements-dividerColor: theme('colors.gray.100');
+
+  --codeuiapp-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --codeuiapp-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --codeuiapp-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --codeuiapp-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --codeuiapp-elements-preview-addressBar-background: theme('colors.gray.100');
+  --codeuiapp-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --codeuiapp-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --codeuiapp-elements-preview-addressBar-text: var(--codeuiapp-elements-textSecondary);
+  --codeuiapp-elements-preview-addressBar-textActive: var(--codeuiapp-elements-textPrimary);
+
+  --codeuiapp-elements-terminals-background: theme('colors.white');
+  --codeuiapp-elements-terminals-buttonBackground: var(--codeuiapp-elements-bg-depth-4);
+
+  --codeuiapp-elements-cta-background: theme('colors.gray.100');
+  --codeuiapp-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --codeuiapp-terminal-background: var(--codeuiapp-elements-terminals-background);
+  --codeuiapp-terminal-foreground: #333333;
+  --codeuiapp-terminal-selection-background: #00000040;
+  --codeuiapp-terminal-black: #000000;
+  --codeuiapp-terminal-red: #cd3131;
+  --codeuiapp-terminal-green: #00bc00;
+  --codeuiapp-terminal-yellow: #949800;
+  --codeuiapp-terminal-blue: #0451a5;
+  --codeuiapp-terminal-magenta: #bc05bc;
+  --codeuiapp-terminal-cyan: #0598bc;
+  --codeuiapp-terminal-white: #555555;
+  --codeuiapp-terminal-brightBlack: #686868;
+  --codeuiapp-terminal-brightRed: #cd3131;
+  --codeuiapp-terminal-brightGreen: #00bc00;
+  --codeuiapp-terminal-brightYellow: #949800;
+  --codeuiapp-terminal-brightBlue: #0451a5;
+  --codeuiapp-terminal-brightMagenta: #bc05bc;
+  --codeuiapp-terminal-brightCyan: #0598bc;
+  --codeuiapp-terminal-brightWhite: #a5a5a5;
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --codeuiapp-elements-borderColor: theme('colors.alpha.white.10');
+  --codeuiapp-elements-borderColorActive: theme('colors.accent.500');
+
+  --codeuiapp-elements-bg-depth-1: theme('colors.gray.950');
+  --codeuiapp-elements-bg-depth-2: theme('colors.gray.900');
+  --codeuiapp-elements-bg-depth-3: theme('colors.gray.800');
+  --codeuiapp-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --codeuiapp-elements-textPrimary: theme('colors.white');
+  --codeuiapp-elements-textSecondary: theme('colors.gray.400');
+  --codeuiapp-elements-textTertiary: theme('colors.gray.500');
+
+  --codeuiapp-elements-code-background: theme('colors.gray.800');
+  --codeuiapp-elements-code-text: theme('colors.white');
+
+  --codeuiapp-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --codeuiapp-elements-button-primary-text: theme('colors.accent.500');
+
+  --codeuiapp-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --codeuiapp-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --codeuiapp-elements-button-secondary-text: theme('colors.white');
+
+  --codeuiapp-elements-button-danger-background: theme('colors.alpha.red.10');
+  --codeuiapp-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --codeuiapp-elements-button-danger-text: theme('colors.red.500');
+
+  --codeuiapp-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --codeuiapp-elements-item-contentActive: theme('colors.white');
+  --codeuiapp-elements-item-contentAccent: theme('colors.accent.500');
+  --codeuiapp-elements-item-contentDanger: theme('colors.red.500');
+  --codeuiapp-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --codeuiapp-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --codeuiapp-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --codeuiapp-elements-loader-background: theme('colors.alpha.gray.10');
+  --codeuiapp-elements-loader-progress: theme('colors.accent.500');
+
+  --codeuiapp-elements-artifacts-background: theme('colors.gray.900');
+  --codeuiapp-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --codeuiapp-elements-artifacts-borderColor: var(--codeuiapp-elements-borderColor);
+  --codeuiapp-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --codeuiapp-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --codeuiapp-elements-actions-background: theme('colors.gray.900');
+  --codeuiapp-elements-actions-code-background: theme('colors.gray.800');
+
+  --codeuiapp-elements-messages-background: theme('colors.gray.800');
+  --codeuiapp-elements-messages-linkColor: theme('colors.accent.500');
+  --codeuiapp-elements-messages-code-background: theme('colors.gray.900');
+  --codeuiapp-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --codeuiapp-elements-messages-inlineCode-text: var(--codeuiapp-elements-textPrimary);
+
+  --codeuiapp-elements-icon-success: theme('colors.green.400');
+  --codeuiapp-elements-icon-error: theme('colors.red.400');
+  --codeuiapp-elements-icon-primary: theme('colors.gray.950');
+  --codeuiapp-elements-icon-secondary: theme('colors.gray.600');
+  --codeuiapp-elements-icon-tertiary: theme('colors.gray.500');
+
+  --codeuiapp-elements-dividerColor: theme('colors.gray.100');
+
+  --codeuiapp-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --codeuiapp-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --codeuiapp-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --codeuiapp-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --codeuiapp-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --codeuiapp-elements-preview-addressBar-background: var(--codeuiapp-elements-bg-depth-1);
+  --codeuiapp-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --codeuiapp-elements-preview-addressBar-backgroundActive: var(--codeuiapp-elements-bg-depth-1);
+  --codeuiapp-elements-preview-addressBar-text: var(--codeuiapp-elements-textSecondary);
+  --codeuiapp-elements-preview-addressBar-textActive: var(--codeuiapp-elements-textPrimary);
+
+  --codeuiapp-elements-terminals-background: var(--codeuiapp-elements-bg-depth-1);
+  --codeuiapp-elements-terminals-buttonBackground: var(--codeuiapp-elements-bg-depth-3);
+
+  --codeuiapp-elements-cta-background: theme('colors.alpha.white.10');
+  --codeuiapp-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --codeuiapp-terminal-background: var(--codeuiapp-elements-terminals-background);
+  --codeuiapp-terminal-foreground: #eff0eb;
+  --codeuiapp-terminal-selection-background: #97979b33;
+  --codeuiapp-terminal-black: #000000;
+  --codeuiapp-terminal-red: #ff5c57;
+  --codeuiapp-terminal-green: #5af78e;
+  --codeuiapp-terminal-yellow: #f3f99d;
+  --codeuiapp-terminal-blue: #57c7ff;
+  --codeuiapp-terminal-magenta: #ff6ac1;
+  --codeuiapp-terminal-cyan: #9aedfe;
+  --codeuiapp-terminal-white: #f1f1f0;
+  --codeuiapp-terminal-brightBlack: #686868;
+  --codeuiapp-terminal-brightRed: #ff5c57;
+  --codeuiapp-terminal-brightGreen: #5af78e;
+  --codeuiapp-terminal-brightYellow: #f3f99d;
+  --codeuiapp-terminal-brightBlue: #57c7ff;
+  --codeuiapp-terminal-brightMagenta: #ff6ac1;
+  --codeuiapp-terminal-brightCyan: #9aedfe;
+  --codeuiapp-terminal-brightWhite: #f1f1f0;
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 37rem;
+  --chat-min-width: 640px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--codeuiapp-elements-icon-success);
+  --toastify-color-progress-error: var(--codeuiapp-elements-icon-error);
+
+  /* Terminal */
+  --codeuiapp-elements-terminal-backgroundColor: var(--codeuiapp-terminal-background);
+  --codeuiapp-elements-terminal-textColor: var(--codeuiapp-terminal-foreground);
+  --codeuiapp-elements-terminal-cursorColor: var(--codeuiapp-terminal-foreground);
+  --codeuiapp-elements-terminal-selection-backgroundColor: var(--codeuiapp-terminal-selection-background);
+  --codeuiapp-elements-terminal-color-black: var(--codeuiapp-terminal-black);
+  --codeuiapp-elements-terminal-color-red: var(--codeuiapp-terminal-red);
+  --codeuiapp-elements-terminal-color-green: var(--codeuiapp-terminal-green);
+  --codeuiapp-elements-terminal-color-yellow: var(--codeuiapp-terminal-yellow);
+  --codeuiapp-elements-terminal-color-blue: var(--codeuiapp-terminal-blue);
+  --codeuiapp-elements-terminal-color-magenta: var(--codeuiapp-terminal-magenta);
+  --codeuiapp-elements-terminal-color-cyan: var(--codeuiapp-terminal-cyan);
+  --codeuiapp-elements-terminal-color-white: var(--codeuiapp-terminal-white);
+  --codeuiapp-elements-terminal-color-brightBlack: var(--codeuiapp-terminal-brightBlack);
+  --codeuiapp-elements-terminal-color-brightRed: var(--codeuiapp-terminal-brightRed);
+  --codeuiapp-elements-terminal-color-brightGreen: var(--codeuiapp-terminal-brightGreen);
+  --codeuiapp-elements-terminal-color-brightYellow: var(--codeuiapp-terminal-brightYellow);
+  --codeuiapp-elements-terminal-color-brightBlue: var(--codeuiapp-terminal-brightBlue);
+  --codeuiapp-elements-terminal-color-brightMagenta: var(--codeuiapp-terminal-brightMagenta);
+  --codeuiapp-elements-terminal-color-brightCyan: var(--codeuiapp-terminal-brightCyan);
+  --codeuiapp-elements-terminal-color-brightWhite: var(--codeuiapp-terminal-brightWhite);
+}

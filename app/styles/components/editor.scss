@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--codeuiapp-elements-editor-backgroundColor, var(--codeuiapp-elements-bg-depth-1));
+  --cm-textColor: var(--codeuiapp-elements-editor-textColor, var(--codeuiapp-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--codeuiapp-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--codeuiapp-elements-editor-gutter-textColor, var(--codeuiapp-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--codeuiapp-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--codeuiapp-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--codeuiapp-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--codeuiapp-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--codeuiapp-elements-editor-cursorColor, var(--codeuiapp-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--codeuiapp-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--codeuiapp-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--codeuiapp-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--codeuiapp-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--codeuiapp-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--codeuiapp-elements-editor-panels-borderColor, var(--codeuiapp-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--codeuiapp-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--codeuiapp-elements-editor-search-textColor, var(--codeuiapp-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--codeuiapp-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --codeuiapp-elements-editor-search-closeButton-backgroundColorHover,
+    var(--codeuiapp-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --codeuiapp-elements-editor-search-closeButton-textColor,
+    var(--codeuiapp-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --codeuiapp-elements-editor-search-closeButton-textColorHover,
+    var(--codeuiapp-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --codeuiapp-elements-editor-search-button-backgroundColor,
+    var(--codeuiapp-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --codeuiapp-elements-editor-search-button-backgroundColorHover,
+    var(--codeuiapp-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--codeuiapp-elements-editor-search-button-textColor, var(--codeuiapp-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --codeuiapp-elements-editor-search-button-textColorHover,
+    var(--codeuiapp-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--codeuiapp-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--codeuiapp-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --codeuiapp-elements-editor-search-button-borderColorFocused,
+    var(--codeuiapp-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--codeuiapp-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--codeuiapp-elements-editor-search-input-textColor, var(--codeuiapp-elements-textPrimary));
+  --cm-search-input-borderColor: var(--codeuiapp-elements-editor-search-input-borderColor, var(--codeuiapp-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --codeuiapp-elements-editor-search-input-borderColorFocused,
+    var(--codeuiapp-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--codeuiapp-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--codeuiapp-elements-editor-tooltip-textColor, var(--codeuiapp-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --codeuiapp-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --codeuiapp-elements-editor-tooltip-textColorSelected,
+    var(--codeuiapp-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--codeuiapp-elements-editor-tooltip-borderColor, var(--codeuiapp-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--codeuiapp-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --codeuiapp-elements-editor-gutter-textColor: #237893;
+  --codeuiapp-elements-editor-gutter-activeLineTextColor: var(--codeuiapp-elements-textPrimary);
+  --codeuiapp-elements-editor-foldGutter-textColorHover: var(--codeuiapp-elements-textPrimary);
+  --codeuiapp-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --codeuiapp-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --codeuiapp-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --codeuiapp-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--codeuiapp-elements-bg-depth-2);
+  --codeuiapp-elements-editor-gutter-textColor: var(--codeuiapp-elements-textTertiary);
+  --codeuiapp-elements-editor-gutter-activeLineTextColor: var(--codeuiapp-elements-textSecondary);
+  --codeuiapp-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --codeuiapp-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --codeuiapp-elements-editor-foldGutter-textColorHover: var(--codeuiapp-elements-textPrimary);
+  --codeuiapp-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --codeuiapp-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --codeuiapp-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}

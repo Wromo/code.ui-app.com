@@ -1,0 +1,9 @@
+.actions .shiki {
+  background-color: var(--codeuiapp-elements-actions-code-background) !important;
+}
+
+.shiki {
+  &:not(:has(.actions), .actions *) {
+    background-color: var(--codeuiapp-elements-messages-code-background) !important;
+  }
+}
