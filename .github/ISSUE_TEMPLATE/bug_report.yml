@@ -6,7 +6,7 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for bugs and issues found with [Codeuiapp(https://code.ui-app.com).
+        This issue tracker is for bugs and issues found with [Codeuiapp(https://github.com/Wromo/codeuiapp).
         If you experience issues related to WebContainer, please file an issue in the official [StackBlitz WebContainer repo](https://github.com/stackblitz/webcontainer-core).
 
         The more information you fill in, the better we can help you.

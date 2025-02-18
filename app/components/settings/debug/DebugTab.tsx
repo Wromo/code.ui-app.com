@@ -58,7 +58,7 @@ const GITHUB_URLS = {
   fork: 'https://api.github.com/repos/Wromo/codeuiapp/commits/main',
   commitJson: async (branch: string) => {
     try {
-      const response = await fetch(`https://api.github.com/repos/Wromo/ode.ui-app.com/commits/${branch}`);
+      const response = await fetch(`https://api.github.com/repos/Wromo/codeuiapp/commits/${branch}`);
       const data: { sha: string } = await response.json();
 
       const packageJsonResp = await fetch(
