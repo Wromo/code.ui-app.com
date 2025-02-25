@@ -1,4 +1,10 @@
-# 🚀 Release v0.0.6
+# 🚀 Release v0.0.7
+
+## What's Changed API ollama 🚀
+
+### 🔄 Changes since v0.0.6
+
+### 🚀 Changed ollama endpoint api from /v1 to official /api
 
 ## What's Changed 🌟
 
