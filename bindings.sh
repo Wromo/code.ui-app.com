@@ -9,7 +9,7 @@ while IFS= read -r line || [ -n "$line" ]; do
     value=$(echo $value | sed 's/^"\(.*\)"$/\1/')
     bindings+="--binding ${name}=${value} "
   fi
-done < .env.local
+done < .env.production
 
 bindings=$(echo $bindings | sed 's/[[:space:]]*$//')
 
