@@ -257,8 +257,8 @@ const checkProviderStatus = async (url: string | null, providerName: string): Pr
       }
     }
 
-    // Try different endpoints based on provider
-    const checkUrls = [`${url}/api/health`, url.endsWith('v1') ? `${url}/models` : `${url}/v1/models`];
+    // Try different endpoints based on provider by ollama the endpoints /api/models not /v1/models
+    const checkUrls = [`${url}/api/health`, url.endsWith('api') ? `${url}/models` : `${url}/api/models`];
     console.log(`[Debug] Checking additional endpoints:`, checkUrls);
 
     const results = await Promise.all(
@@ -613,14 +613,14 @@ export default function DebugTab() {
                       </div>
                     )}
 
-                    {/* Connection Info */}
+                    {/* Connection Info to /api*/}
                     {provider.url && (
                       <div className="text-codeuiapp-elements-textSecondary">
                         <span className="font-medium">Endpoints checked:</span>
                         <ul className="list-disc list-inside pl-2 mt-1">
                           <li>{provider.url} (root)</li>
                           <li>{provider.url}/api/health</li>
-                          <li>{provider.url}/v1/models</li>
+                          <li>{provider.url}/api/models</li>
                         </ul>
                       </div>
                     )}
