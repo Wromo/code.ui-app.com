@@ -7,7 +7,7 @@ services:
       target: codeuiapp-ai-production
     ports:
       - "5173:5173"
-    env_file: ".env.local"
+    env_file: ".env.production"
     environment:
       - NODE_ENV=production
       - COMPOSE_PROFILES=production
